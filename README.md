@@ -1,7 +1,12 @@
+![Nuget](https://img.shields.io/nuget/v/DotCreative.Services.OpenReport)
+
 # OpenReport
 O projeto **Open Report** nasceu a partir da necessidade de se criar relatórios usando códigos html simples sem a necessidade de utilizar ferramentas complexas como Stimulsoft, ReportViewer e outras mais que, embora extremamente úteis, são complexas demais para objetivos mais simples.
 
 O uso do **Open Report** é simples. Basta instanciar a classe principal indicando o arquivo html. É possível ainda realizar a interpolação de dados com um objeto. O **Open Report** utiliza o projeto DotLiquid que faz a interpolação de dados utilizando *double mustashe*.
+
+## Sobre utilização do DotLiquid
+Para instruções de uso sobre a biblioteca DotLiquid, acesse http://dotliquidmarkup.org/docs ou https://shopify.github.io/liquid/tags/control-flow/ (Biblioteca base em Ruby - O princípio será o mesmo).
 
 ## Utilização
 ```
