@@ -8,9 +8,11 @@
     <PackageIcon>icon.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/paulopereira-tec/OpenReport</RepositoryUrl>
-    <Copyright>DotCreative Soluções em TI e Paulo Pereira</Copyright>
+    <Copyright>Paulo Pereira</Copyright>
     <PackageProjectUrl>https://github.com/paulopereira-tec/OpenReport</PackageProjectUrl>
     <Description>Gerador de arquivos PDF baseados em HTML</Description>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
