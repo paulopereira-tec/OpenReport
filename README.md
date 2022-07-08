@@ -41,6 +41,9 @@ Em ambos os casos, a classe geradora do PDF irá retornar o array de bytes. Veja
 // recupera o array de bytes
 bytes[] content = report.Generate();
 
-// salva o pdf no local desejado
-report.Generate("diretorio/arquivo.pdf");
+/**
+ * Salva o PDF no local desejado. O segundo parâmetro deterimina se o arquivo será apagado imediatamente após a
+ * geração do PDF. O padrão é `true`.
+ */
+report.Generate("diretorio/arquivo.pdf", false);
 ```

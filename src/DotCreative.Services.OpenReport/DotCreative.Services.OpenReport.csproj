@@ -5,18 +5,19 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <PackageIcon>icon.png</PackageIcon>
+    <PackageIcon>report.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/paulopereira-tec/OpenReport</RepositoryUrl>
     <Copyright>Paulo Pereira</Copyright>
     <PackageProjectUrl>https://github.com/paulopereira-tec/OpenReport</PackageProjectUrl>
-    <Description>Gerador de arquivos PDF baseados em HTML</Description>
+    <Description>Gerador de arquivos PDF baseados em HTML. Sinteticamente, transforma um código HTML em PDF.</Description>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>pdf, html, report, relatório, double mustashe</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\..\..\..\..\Downloads\icon.png">
+    <None Include="..\assets\report.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
