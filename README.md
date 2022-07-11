@@ -1,9 +1,4 @@
-![Nuget](https://img.shields.io/nuget/v/DotCreative.Services.OpenReport)
-![.net6](https://img.shields.io/badge/.NET-6-blue)
-![C# 10](https://img.shields.io/badge/C%23-10-blue)
-
-
-<img src="./src/DotCreative.Services.OpenReport/assets/report.png" width="100">
+![Nuget](https://img.shields.io/nuget/v/DotCreative.Services.OpenReport) ![.net6](https://img.shields.io/badge/.NET-6-blue) ![C# 10](https://img.shields.io/badge/C%23-10-blue)
 
 # OpenReport
 O projeto **Open Report** nasceu a partir da necessidade de se criar relatórios usando códigos html simples sem a necessidade de utilizar ferramentas complexas como Stimulsoft, ReportViewer e outras mais que, embora extremamente úteis, são complexas demais para objetivos mais simples.

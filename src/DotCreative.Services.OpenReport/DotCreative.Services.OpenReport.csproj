@@ -17,15 +17,25 @@
     <AssemblyVersion>1.0.0.1</AssemblyVersion>
     <FileVersion>1.0.0.1</FileVersion>
     <Version>1.0.1</Version>
-    <ApplicationIcon>assets\report.ico</ApplicationIcon>
+    <ApplicationIcon>report.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="assets\report.ico" />
+    <Compile Remove="assets\**" />
+    <EmbeddedResource Remove="assets\**" />
+    <None Remove="assets\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="report.ico" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\assets\report.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
@@ -35,12 +45,4 @@
     <PackageReference Include="DotLiquid" Version="2.2.656" />
     <PackageReference Include="itext7.pdfhtml" Version="4.0.3" />
   </ItemGroup>
-
-  <ItemGroup>
-    <None Update="assets\report.png">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-  </ItemGroup>
-
 </Project>
