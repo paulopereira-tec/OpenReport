@@ -6,8 +6,12 @@ O projeto **Open Report** nasceu a partir da necessidade de se criar relatórios
 
 O uso do **Open Report** é simples. Basta instanciar a classe principal indicando o arquivo html. É possível ainda realizar a interpolação de dados com um objeto. O **Open Report** utiliza o projeto DotLiquid que faz a interpolação de dados utilizando *double mustashe*.
 
-## Notas dessa versão
+## Notas dessa versão, contribuições e sugestões.
 Código migrado de .NET 6 para .NET Standard 2.0 para uma maior compatibilidade com aplicações legadas.
+
+Por favor, não deixe de apontar suas sugestões sobre o projeto.
+Fique a vontade para contribuir e sugerir novas funcionalidades ou melhorias.
+Abra uma Issue para sugestões e melhorias.
 
 ## Sobre utilização do DotLiquid
 (Para interpolação de dados)
