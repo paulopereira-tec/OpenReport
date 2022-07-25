@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DotCreative.Services.OpenReport\DotCreative.Services.OpenReport.csproj" />
+    <ProjectReference Include="..\Report\DotCreative.Services.OpenReport.csproj" />
   </ItemGroup>
 
 </Project>

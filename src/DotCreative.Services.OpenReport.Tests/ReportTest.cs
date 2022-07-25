@@ -9,7 +9,7 @@ public class ReportTest
   /// Este teste12313 indica que deve-se esperar sucesso ao renderizar um código HTML.
   /// </summary>
   [TestMethod]
-  public void MustBeSuccesOnRenderHtml()
+  public void MustBeSucces_RenderHtml()
   {
     try
     {
@@ -45,7 +45,7 @@ public class ReportTest
   /// Este teste deve criar com sucesso um arquivo PDF no local indicado.
   /// </summary>
   [TestMethod]
-  public void MustBeCreateAPdfFile()
+  public void MustBe_CreateAPdfFile()
   {
     try
     {
@@ -61,20 +61,20 @@ public class ReportTest
 
         string html = @"
 <h1>Exemplo de renderização de html</h1>
-<p><strong>Nome:</strong> {{ QualquerVariavelInexistente1 }} </p>
-<p><strong>Endereço:</strong> {{ QualquerVariavelInexistente2 }}</p>
-<p><strong>Idade:</strong> {{ QualquerVariavelInexistente3 }}</p>
+<p><strong>Nome:</strong> {{ Name }} </p>
+<p><strong>Endereço:</strong> {{ Address }}</p>
+<p><strong>Idade:</strong> {{ Age }}</p>
 ";
 
-        string nomeArquivo = "ArquivoDeTesteGerado.pdf";
+        string nomeArquivo = @"C:\Users\Paulo\Downloads\ArquivoDeTesteGerado.pdf";
 
         // Act
         Report report = new Report(html, person);
-        await report.Generate(nomeArquivo, false);
+        report.Generate(nomeArquivo, false);
 
         bool existsAFile = File.Exists(nomeArquivo);
 
-        File.Delete(nomeArquivo);
+        //File.Delete(nomeArquivo);
 
         // Assert
         Assert.IsTrue(existsAFile);
@@ -91,7 +91,7 @@ public class ReportTest
   /// este teste deve retornar com sucesso um array de bytes de um arquivo html
   /// </summary>
   [TestMethod]
-  public void MustBeReturnBytesOfPdfFile()
+  public void MustBeSuccess_ReturnBytesOfPdfFile()
   {
     try
     {
@@ -107,14 +107,14 @@ public class ReportTest
 
         string html = @"
 <h1>Exemplo de renderização de html</h1>
-<p><strong>Nome:</strong> {{ QualquerVariavelInexistente1 }} </p>
-<p><strong>Endereço:</strong> {{ QualquerVariavelInexistente2 }}</p>
-<p><strong>Idade:</strong> {{ QualquerVariavelInexistente3 }}</p>
+<p><strong>Nome:</strong> {{ Name }} </p>
+<p><strong>Endereço:</strong> {{ Address }}</p>
+<p><strong>Idade:</strong> {{ Age }}</p>
 ";
 
         // Act
         Report report = new Report(html, person);
-        var bytesOfPdf = await report.Generate();
+        var bytesOfPdf = report.Generate();
 
         // Assert
         Assert.IsTrue(bytesOfPdf.GetType() == typeof(byte[]));

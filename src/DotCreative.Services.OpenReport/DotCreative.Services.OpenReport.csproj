@@ -1,29 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <PackageIcon>report.png</PackageIcon>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
-    <RepositoryUrl>https://github.com/paulopereira-tec/OpenReport</RepositoryUrl>
-    <Copyright>Paulo Pereira</Copyright>
-    <PackageProjectUrl>https://github.com/paulopereira-tec/OpenReport</PackageProjectUrl>
-    <Description>Gerador de arquivos PDF baseados em HTML. Sinteticamente, transforma um código HTML em PDF.</Description>
-    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageTags>pdf, html, report, relatório, double mustashe</PackageTags>
-    <AssemblyVersion>1.0.0.1</AssemblyVersion>
-    <FileVersion>1.0.0.1</FileVersion>
-    <Version>1.0.1</Version>
-    <ApplicationIcon>report.ico</ApplicationIcon>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>2.0.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="assets\**" />
-    <EmbeddedResource Remove="assets\**" />
-    <None Remove="assets\**" />
+    <None Remove="report.ico" />
   </ItemGroup>
 
   <ItemGroup>
@@ -31,13 +14,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="..\..\README.md">
-      <Pack>True</Pack>
+    <None Include="..\..\README.md" Link="README.md">
       <PackagePath>\</PackagePath>
+      <Pack>True</Pack>
     </None>
-    <None Include="..\assets\report.png">
-      <Pack>True</Pack>
+    <None Include="..\assets\report.png" Link="report.png">
       <PackagePath>\</PackagePath>
+      <Pack>True</Pack>
     </None>
   </ItemGroup>
 
@@ -45,4 +28,5 @@
     <PackageReference Include="DotLiquid" Version="2.2.656" />
     <PackageReference Include="itext7.pdfhtml" Version="4.0.3" />
   </ItemGroup>
+
 </Project>

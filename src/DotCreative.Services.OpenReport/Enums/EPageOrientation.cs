@@ -1,7 +1,8 @@
-﻿namespace DotCreative.Services.OpenReport.Enums;
-
-public enum EPageOrientation
+﻿namespace DotCreative.Services.OpenReport.Enums
 {
-  Portrait,
-  Landscape
+  public enum EPageOrientation
+  {
+    Portrait,
+    Landscape
+  }
 }
