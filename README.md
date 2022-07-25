@@ -1,9 +1,13 @@
-![Nuget](https://img.shields.io/nuget/v/DotCreative.Services.OpenReport) ![.net6](https://img.shields.io/badge/.NET-6-blue) ![C# 10](https://img.shields.io/badge/C%23-10-blue)
+![Nuget](https://img.shields.io/nuget/v/DotCreative.Services.OpenReport) 
+![.NET Standard 2.0](https://img.shields.io/badge/NET%20Standard-2.0-blue) 
 
 # OpenReport
 O projeto **Open Report** nasceu a partir da necessidade de se criar relatórios usando códigos html simples sem a necessidade de utilizar ferramentas complexas como Stimulsoft, ReportViewer e outras mais que, embora extremamente úteis, são complexas demais para objetivos mais simples.
 
 O uso do **Open Report** é simples. Basta instanciar a classe principal indicando o arquivo html. É possível ainda realizar a interpolação de dados com um objeto. O **Open Report** utiliza o projeto DotLiquid que faz a interpolação de dados utilizando *double mustashe*.
+
+## Notas dessa versão
+Código migrado de .NET 6 para .NET Standard 2.0 para uma maior compatibilidade com aplicações legadas.
 
 ## Sobre utilização do DotLiquid
 (Para interpolação de dados)
@@ -11,7 +15,7 @@ O uso do **Open Report** é simples. Basta instanciar a classe principal indican
 Para instruções de uso sobre a biblioteca DotLiquid, acesse http://dotliquidmarkup.org/docs ou https://shopify.github.io/liquid/tags/control-flow/ (Biblioteca base em Ruby - O princípio será o mesmo).
 
 ## Utilização
-```
+~~~C#
 // Crie um código HTML para ser utilizado.
 string html = @"
 <h1>Exemplo de utilização da classe Report</h1>
@@ -31,7 +35,7 @@ var person = new {
 
 // Instancie um objeto da classe Report. O segundo parâmetro é opcional.
 Report report = new(html, person);
-```
+~~~
 
 É possível gerar o PDF de duas formas:
 - (1) recuperando um array de bytes para ser utilizado como bem entender
@@ -39,7 +43,7 @@ Report report = new(html, person);
 
 Em ambos os casos, a classe geradora do PDF irá retornar o array de bytes. Veja abaixo as duas implementações:
 
-```
+~~~C#
 // recupera o array de bytes
 bytes[] content = report.Generate();
 
@@ -48,4 +52,4 @@ bytes[] content = report.Generate();
  * geração do PDF. O padrão é `true`.
  */
 report.Generate("diretorio/arquivo.pdf", false);
-```
+~~~

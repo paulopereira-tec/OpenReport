@@ -3,6 +3,18 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <Version>2.0.0</Version>
+    <PackageProjectUrl>https://github.com/paulopereira-tec/OpenReport</PackageProjectUrl>
+    <PackageIcon>report.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/paulopereira-tec/OpenReport</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>pdf; html; report; relatório; dotliquid; twig;</PackageTags>
+    <PackageReleaseNotes>Nesta versão, a estrutura foi modificada de .NET 6 para .NET Standard para uma melhor compatibilidade com aplicações legadas.</PackageReleaseNotes>
+    <Description>Gerador de arquivos e relatórios em PDF baseados em HTML.</Description>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Authors>Paulo Pereira</Authors>
+    <Company>DotCreative Soluções em TI</Company>
+    <Copyright>MIT</Copyright>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,6 +26,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="..\..\assets\report.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <None Include="..\..\README.md" Link="README.md">
       <PackagePath>\</PackagePath>
       <Pack>True</Pack>
