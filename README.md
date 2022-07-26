@@ -1,5 +1,4 @@
-![Nuget](https://img.shields.io/nuget/v/DotCreative.Services.OpenReport) 
-![.NET Standard 2.0](https://img.shields.io/badge/NET%20Standard-2.0-blue) 
+![Nuget](https://img.shields.io/nuget/v/DotCreative.Services.OpenReport) ![.NET Standard 2.0](https://img.shields.io/badge/NET%20Standard-2.0-blue) 
 
 # OpenReport
 O projeto **Open Report** nasceu a partir da necessidade de se criar relatórios usando códigos html simples sem a necessidade de utilizar ferramentas complexas como Stimulsoft, ReportViewer e outras mais que, embora extremamente úteis, são complexas demais para objetivos mais simples.
@@ -7,7 +6,8 @@ O projeto **Open Report** nasceu a partir da necessidade de se criar relatórios
 O uso do **Open Report** é simples. Basta instanciar a classe principal indicando o arquivo html. É possível ainda realizar a interpolação de dados com um objeto. O **Open Report** utiliza o projeto DotLiquid que faz a interpolação de dados utilizando *double mustashe*.
 
 ## Notas dessa versão, contribuições e sugestões.
-Código migrado de .NET 6 para .NET Standard 2.0 para uma maior compatibilidade com aplicações legadas.
+- 2.0.0 - Código migrado de .NET 6 para .NET Standard 2.0 para uma maior compatibilidade com aplicações legadas.
+- 2.0.1 - Removida a descoberta (desnecessária) de diretório do arquivo para posterior remoção.
 
 Por favor, não deixe de apontar suas sugestões sobre o projeto.
 Fique a vontade para contribuir e sugerir novas funcionalidades ou melhorias.

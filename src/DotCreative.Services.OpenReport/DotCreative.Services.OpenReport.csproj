@@ -2,14 +2,15 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>2.0.0</Version>
+    <Version>2.0.1</Version>
     <PackageProjectUrl>https://github.com/paulopereira-tec/OpenReport</PackageProjectUrl>
     <PackageIcon>report.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/paulopereira-tec/OpenReport</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>pdf; html; report; relatório; dotliquid; twig;</PackageTags>
-    <PackageReleaseNotes>Nesta versão, a estrutura foi modificada de .NET 6 para .NET Standard para uma melhor compatibilidade com aplicações legadas.</PackageReleaseNotes>
+    <PackageReleaseNotes>- 2.0.0 Nesta versão, a estrutura foi modificada de .NET 6 para .NET Standard para uma melhor compatibilidade com aplicações legadas.
+- 2.0.1 Removida a descoberta (desnecessária) do local do arquivo para gerar os bytes e/ou depois deletar.</PackageReleaseNotes>
     <Description>Gerador de arquivos e relatórios em PDF baseados em HTML.</Description>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Authors>Paulo Pereira</Authors>

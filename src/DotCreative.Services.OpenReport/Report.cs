@@ -45,17 +45,16 @@ namespace DotCreative.Services.OpenReport
     /// O segundo parâmetro, determina se o arquivo deverá ser apagado imediatamente
     /// após a geração do PDF.
     /// </summary>
-    public byte[] Generate(string fileName = "output.pdf", bool mustDelete = true)
+    public byte[] Generate(string filename = "output.pdf", bool mustDelete = true)
     {
       string content = Render();
 
-      HtmlConverter.ConvertToPdf(content, File.Open(fileName, FileMode.Create));
+      HtmlConverter.ConvertToPdf(content, File.Open(filename, FileMode.Create));
 
-      string file = Path.GetFileName(fileName);
-      var bytes = File.ReadAllBytes(file);
+      var bytes = File.ReadAllBytes(filename);
 
 
-      if (mustDelete) File.Delete(file);
+      if (mustDelete) File.Delete(filename);
 
       return bytes;
     }
